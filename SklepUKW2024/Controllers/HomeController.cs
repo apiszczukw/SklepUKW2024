@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SklepUKW2024.DAL;
 using SklepUKW2024.Models;
 using System.Diagnostics;
 
@@ -6,16 +7,20 @@ namespace SklepUKW2024.Controllers
 {
     public class HomeController : Controller
     {
+        FilmsContext db;
+
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+		public HomeController(ILogger<HomeController> logger, FilmsContext db)
+		{
+			_logger = logger;
+			this.db = db;
+		}
 
-        public IActionResult Index()
+		public IActionResult Index()
         {
-            return View();
+            var kategorie = db.Categories.ToList();
+            return View(kategorie);
         }
 
         public IActionResult Privacy()

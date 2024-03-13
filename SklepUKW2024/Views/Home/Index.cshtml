@@ -1,15 +1,18 @@
-﻿@{
+﻿@model IEnumerable<Category>
+
+@{
    // ViewData["Title"] = "Strona główna";
     ViewBag.Title = "Strona główna";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    @for(int i=0; i<10; i++)
-    {
-        <h1> Cześć. </h1>
-    }
 
-    
+    <ul>
+    @foreach (var category in Model)
+    {
+        <li>
+            @category.Name <span> - </span> <i> @category.Desc </i>
+        </li>
+    }
+    </ul>
 </div>
