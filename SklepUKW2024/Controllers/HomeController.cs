@@ -23,9 +23,10 @@ namespace SklepUKW2024.Controllers
             return View();
         }
 
-        public IActionResult Kontakt()
+        //[Route("Footer")]
+        public IActionResult FooterSites(string name)
         {
-            return View();
+            return View(name);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
