@@ -39,3 +39,7 @@ footer a {
     color: white;
     margin-right: 2rem;
 }
+
+#main {
+    min-height: calc(100vh - 12.2rem);
+}

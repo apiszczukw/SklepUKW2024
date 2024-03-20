@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Category>
+﻿
 
 @{
    // ViewData["Title"] = "Strona główna";
@@ -7,12 +7,4 @@
 
 <div class="text-center">
 
-    <ul>
-    @foreach (var category in Model)
-    {
-        <li>
-            @category.Name <span> - </span> <i> @category.Desc </i>
-        </li>
-    }
-    </ul>
 </div>
