@@ -43,3 +43,7 @@ footer a {
 #main {
     min-height: calc(100vh - 12.2rem);
 }
+
+table td {
+    padding: 3rem;
+}

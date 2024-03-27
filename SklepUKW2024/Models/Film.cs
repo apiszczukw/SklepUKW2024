@@ -17,6 +17,10 @@ namespace SklepUKW2024.Models
         [StringLength(200)]
         public string Desc { get; set; }
 
+        public double? Price { get; set; }
+
+        public DateTime? AddDate { get; set; }
+
         // Klucz obcy
         // Inne opcje: CategoryCategoryId
         // [ForeignKey("Category")]

@@ -26,5 +26,13 @@ namespace SklepUKW2024.Controllers
 
 			return View(filmsFromCategory);
 		}
+
+		public IActionResult Details(int filmId)
+		{
+			var film = db.Films.Find(filmId);
+			var category = db.Categories.Find(film.CategoryId);
+
+			return View(film);
+		}
 	}
 }

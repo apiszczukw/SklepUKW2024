@@ -24,7 +24,9 @@ namespace SklepUKW2024.DAL
                     CategoryId = 4,
                     Title = "Inception",
                     Director = "Christopher Nolan",
-                    Desc = "Zespół specjalistów wkracza w umysł biznesmena, aby zaimplantować tam myśl."
+                    Desc = "Zespół specjalistów wkracza w umysł biznesmena, aby zaimplantować tam myśl.",
+                    Price = 12,
+                    AddDate = new DateTime(2020, 5, 21)
                 },
     new Film()
     {
@@ -32,48 +34,60 @@ namespace SklepUKW2024.DAL
         CategoryId = 3,
         Title = "Gone Girl",
         Director = "David Fincher",
-        Desc = "Kiedy zaginie żona, mąż staje się głównym podejrzanym, ale sytuacja jest bardziej skomplikowana niż się wydaje."
-    },
+        Desc = "Kiedy zaginie żona, mąż staje się głównym podejrzanym, ale sytuacja jest bardziej skomplikowana niż się wydaje.",
+		Price = 12,
+		AddDate = new DateTime(2020, 5, 21)
+	},
     new Film()
     {
         FilmId = 23,
         CategoryId = 1,
         Title = "The Exorcist",
         Director = "William Friedkin",
-        Desc = "Kiedy młoda dziewczyna zostaje opętana przez złego ducha, ksiądz próbuje jej pomóc."
-    },
+        Desc = "Kiedy młoda dziewczyna zostaje opętana przez złego ducha, ksiądz próbuje jej pomóc.",
+		Price = 15,
+		AddDate = new DateTime(2024, 1, 21)
+	},
     new Film()
     {
         FilmId = 24,
         CategoryId = 2,
         Title = "March of the Penguins",
         Director = "Luc Jacquet",
-        Desc = "Dokumentalny opis życia pingwinów cesarskich w Antarktyce."
-    },
+        Desc = "Dokumentalny opis życia pingwinów cesarskich w Antarktyce.",
+		Price = 21,
+		AddDate = new DateTime(2024, 2, 11)
+	},
     new Film()
     {
         FilmId = 25,
         CategoryId = 5,
         Title = "The Lord of the Rings: The Fellowship of the Ring",
         Director = "Peter Jackson",
-        Desc = "Młody hobbit wyrusza w podróż, aby zniszczyć pierścień, który może zniszczyć świat."
-    },
+        Desc = "Młody hobbit wyrusza w podróż, aby zniszczyć pierścień, który może zniszczyć świat.",
+		Price = 10,
+		AddDate = new DateTime(2021, 9, 30)
+	},
     new Film()
     {
         FilmId = 26,
         CategoryId = 3,
         Title = "Se7en",
         Director = "David Fincher",
-        Desc = "Dwóch detektywów tropi seryjnego mordercę, który działa według siedmiu grzechów głównych."
-    },
+        Desc = "Dwóch detektywów tropi seryjnego mordercę, który działa według siedmiu grzechów głównych.",
+		Price = 14,
+		AddDate = new DateTime(2022, 6, 1)
+	},
     new Film()
     {
         FilmId = 27,
         CategoryId = 4,
         Title = "Die Hard",
         Director = "John McTiernan",
-        Desc = "Policyjny porucznik staje w obronie budynku, który został przejęty przez terrorystów."
-    },
+        Desc = "Policyjny porucznik staje w obronie budynku, który został przejęty przez terrorystów.",
+		Price = 9,
+		AddDate = new DateTime(2019, 3, 3)
+	},
     new Film()
     {
         FilmId = 28,

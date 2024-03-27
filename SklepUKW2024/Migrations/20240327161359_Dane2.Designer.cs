@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SklepUKW2024.DAL;
 
@@ -11,9 +12,10 @@ using SklepUKW2024.DAL;
 namespace SklepUKW2024.Migrations
 {
     [DbContext(typeof(FilmsContext))]
-    partial class FilmsContextModelSnapshot : ModelSnapshot
+    [Migration("20240327161359_Dane2")]
+    partial class Dane2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
